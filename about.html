@@ -2,27 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>👋🏻 About me</title>
+    <title>About me</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/home.css">
+    <link rel="stylesheet" href="/assets/styles/home.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋🏻</text></svg>">
 </head>
 <body>
 <header data-cy="header" class="desktop-header">
     <div class="header-container">
-        <span class="nav-label active">
+        <span class="nav-label ">
             <a href="/">Home</a>
         </span>
 
-        <span class="nav-label false">
+        <span class="nav-label active">
             <a href="/about">About me</a>
         </span>
-        <span class="nav-label false">
+        <span class="nav-label ">
             <a href="/overthought">Portfolio</a>
         </span>
-        <span class="nav-label false">
+        <span class="nav-label ">
             <a href="/design-details">Contact</a>
         </span>
-        <span class="nav-label false">
+        <span class="nav-label ">
             <a href="/blog">Blog</a>
         </span>
 
@@ -30,21 +31,33 @@
     <div class="header-bg"></div>
 </header>
 <section>
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+    <div class="flex flex-col max-w-screen-sm mx-auto justify-content">
+   <div class="flex flex-col space-y-12" data-cy="about-page">
+      <div class="mt-24">
+         <div style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;">
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
+            <img alt="A photo of me in Shanghai" src="/assets/images/dani-shanghai.jpg" style="border-radius:5px;" />
+         </div>
+      </div>
+      <div class="flex flex-col space-y-12">
+         <div class="flex flex-col prose lg:prose-lg">
+            <p>👋 I’m a product designer, podcaster, and writer, currently living in San Francisco.</p>
+            <p>Right now I’m designing <a href="https://github.com/mobile" target="_blank" rel="noopener noreferrer">native mobile apps</a> at <a href="https://github.com/brianlovin" target="_blank" rel="noopener noreferrer">GitHub</a>. Before GitHub, I co-founded <a href="https://spectrum.chat" target="_blank" rel="noopener noreferrer">Spectrum</a>, a platform for large-scale communities to have better public conversations. Spectrum was acquired by GitHub in November, 2018.</p>
+            <p>Before Spectrum I designed payments experiences at Facebook, working across Facebook, Messenger, WhatsApp, and Instagram. I originally cut my teeth as the first product designer at <a href="https://buffer.com" target="_blank" rel="noopener noreferrer">Buffer</a>.</p>
+            <p>I also co-host the <a href="https://designdetails.fm" target="_blank" rel="noopener noreferrer">Design Details Podcast</a>, a weekly conversation about design process and culture. Design Details is part of <a href="https://spec.fm" target="_blank" rel="noopener noreferrer">Spec.fm</a>, a podcast network for designers and developers, which I co-founded in 2015.</p>
+            <p>You can find me on <a href="https://twitter.com/brian_lovin" target="_blank" rel="noopener noreferrer">Twitter</a> where I talk about design and development, or on <a href="https://github.com/brianlovin" target="_blank" rel="noopener noreferrer">GitHub</a> where I’m building in the open, or on <a href="https://figma.com/@brian" target="_blank" rel="noopener noreferrer">Figma</a> where I’m exploring how plugins can automate the tedious parts of interface design.</p>
+            <p><em>Photo by <a href="https://twitter.com/rxnjmmt" target="_blank" rel="noopener noreferrer">@rxnjmmt</a></em></p>
+         </div>
+         <div class="w-full border-t border-gray-200 dark:border-gray-800"></div>
+      
+      </div>
+   </div>
+</div>
 
 </section>
 <div class="flex flex-col max-w-screen-sm mx-auto justify-content">
     <div class="h-px bg-gray-200 dark:bg-gray-800 timeline-stroke"></div>
-    <div class="grid grid-cols-1 gap-4 p-6 py-24 bg-gray-100 sm:grid-cols-3 dark:bg-gray-900 sm:bg-gray-50 sm:dark:bg-gray-1000">
+    <div class="grid grid-cols-1 gap-4 p-6 py-24  sm:grid-cols-3 dark:bg-gray-900 sm:bg-gray-50 sm:dark:bg-gray-1000">
         <div class="flex flex-col space-y-4">
             <a class="black-link" href="/">Home</a>
             <a class="black-link" href="/about">About me</a>
@@ -56,9 +69,8 @@
             <a class="black-link" href="/ama">Blog</a>
         </div>
         <div class="flex flex-col space-y-4">
-            <a class="black-link" href="/bookmarks">Bookmarks</a>
-            <a class="black-link" href="/hn">Hacker News</a>
-            <a class="black-link" href="/security">Security Checklist</a>
+            <p>Made with ♥︎ using Jekyll</p>
+            <p>Inspired by @brian_lovin</p>
         </div>
     </div>
 </div>

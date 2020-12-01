@@ -4,7 +4,7 @@
     <div class="flex-1 h-px ml-4 bg-gray-300 dark:bg-gray-800 timeline-stroke"></div>
 </div>
 
-{% include visit-event.html 
+{% include_relative timeline-templates/visit-event.html 
  place="Tenerife, Canary Islands" 
  date="November 2, 2020" 
  flickrUrl="https://www.flickr.com/photos/147447178@N07/albums/72157707346542695"
@@ -16,7 +16,7 @@
  
  
  
-{% include project-event.html 
+{% include_relative timeline-templates/project-event.html 
  name="iOS 14 Dark icon set" 
  date="November 2, 2020" 
  desc="A curated resources of icons + wallpaper to customize your iPhone"
@@ -25,13 +25,13 @@
  %}
 
 
- {% include twitter-thread.html 
+ {% include_relative timeline-templates/twitter-thread.html 
  tweet="Is Figma better than Sketch?" 
  date="November 31, 2020" 
  desc="In this thread I explain my expirience using both" 
  %}
 
- {% include text-event.html 
+ {% include_relative timeline-templates/text-event.html 
  title="Started to learn Figma" 
  date="November 31, 2020" 
  buttonUrl="https://teloputodije.com"
@@ -39,7 +39,7 @@
  text="ted, running, and paid for. I’m going to start slowly integrating personal projects like Security Checklist int"
  %}
 
- {% include post-event.html 
+ {% include_relative timeline-templates/post-event.html 
  title="Are all-screen phones killing the icon?" 
  date="November 32, 2020" 
  desc="An approach to know ...."
