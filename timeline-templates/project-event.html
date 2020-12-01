@@ -1,0 +1,30 @@
+<div class="flex mb-12 md:mb-12 timeline-item">
+    <div class="flex flex-col items-center">
+        <div class="flex justify-center p-3 rounded-full align-center border-4 border-gray-50 dark:border-gray-1000 text-purple-800 dark:text-purple-200 bg-purple-500 bg-opacity-20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+        </div>
+        <div class="flex-1 w-px -mb-12 bg-gray-200 md:-mb-12 dark:bg-gray-800 timeline-stroke"></div>
+    </div>
+    <div class="flex flex-col flex-1 ml-4 space-y-4">
+        <div class="flex flex-col pt-1 contents-center"><span class="font-medium text-primary">Created {{include.name}}</span><span class="text-sm text-tertiary">{{include.date}}</span></div>
+        <div class="flex flex-col space-y-4 timeline-full-width">
+            <a target="_blank" rel="noopener noreferrer" href="{{include.url}}">
+                <div class="flex flex-col overflow-hidden transition-shadow bg-white rounded-md shadow md:flex-row dark:bg-gray-900 hover:shadow-cardHover">
+                    <div class="flex flex-col justify-start px-3 py-3 space-y-2 md:w-1/2">
+                        <h5 class="px-2 pt-2">{{include.name}}</h5>
+                        <p class="flex-1 px-2 font-normal">{{include.desc}}</p>
+                        <span></span>
+                        <div class="btn">{{include.buttonText|default: 'View more'}}</div>
+                    </div>
+                    <div class="hidden w-full md:w-1/2 md:inline-block">
+                        <div style="display:block;overflow:hidden;position:relative;box-sizing:border-box;margin:0">
+                            <img alt="preview of waves, a custom made set of phone wallpapers" src="{{include.imageUrl}}" >
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

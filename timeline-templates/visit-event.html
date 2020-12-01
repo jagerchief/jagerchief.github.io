@@ -1,0 +1,37 @@
+<div class="flex mb-12 md:mb-12 timeline-item">
+    <div class="flex flex-col items-center">
+        <div class="flex justify-center p-3 rounded-full align-center border-4 border-gray-50 dark:border-gray-1000 text-primary bg-gray-200 dark:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+        </div>
+        <div class="flex-1 w-px -mb-12 bg-gray-200 md:-mb-12 dark:bg-gray-800 timeline-stroke"></div>
+    </div>
+    <div class="flex flex-col flex-1 ml-4 space-y-4">
+        <div class="flex flex-col pt-1 contents-center"><span class="font-medium text-primary">Visited {{include.place}}</span><span class="text-sm text-tertiary">{{include.date}}</span></div>
+        <div class="flex flex-col space-y-4 timeline-full-width">
+            <a {% if include.flickrUrl %} href="{{include.flickrUrl}}" {% endif %} target="_blank" rel="nooopener noreferrer">
+                <div class="grid grid-cols-2 grid-rows-2 gap-2">
+
+                    <div class="place-image" style="background-image: url('{{include.image1}}')">
+
+                    </div>
+                    <div class="place-image" style="background-image: url('{{include.image2}}')">
+
+                    </div>
+                    <div class="place-image" style="background-image: url('{{include.image3}}')">
+
+                    </div>
+                    <div class="place-image" style="background-image: url('{{include.image4}}')">
+
+                    </div>
+
+                </div>
+            </a>
+            {% if include.flickrUrl %}
+            <div class="flex flex-wrap space-y-3 md:space-y-0 md:space-x-3 timeline-inset "><a href="{{include.flickrUrl}}" target="_blank" rel="noopener noreferrer" class="w-full md:w-auto btn">View in Flickr</a></div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="flex mb-12 md:mb-12 timeline-item">
+    <div class="flex flex-col items-center">
+        <div class="flex justify-center p-3 rounded-full align-center border-4 border-gray-50 dark:border-gray-1000 text-green-800 dark:text-green-200 bg-green-500 bg-opacity-20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+            </svg>
+        </div>
+        <div class="flex-1 w-px -mb-12 bg-gray-200 md:-mb-12 dark:bg-gray-800 timeline-stroke"></div>
+    </div>
+    <div class="flex flex-col flex-1 ml-4 space-y-4">
+        <div class="flex flex-col pt-1 contents-center"><span class="font-medium text-primary">Published new post</span><span class="text-sm text-tertiary">{{include.date}}</span></div>
+        <div class="flex flex-col space-y-4 timeline-full-width">
+            <a class="px-4 py-3 transition-shadow bg-white rounded-md shadow dark:bg-gray-900 hover:shadow-cardHover" href="{{include.url}}">
+                <div class="flex flex-col space-y-4">
+                    <div class="flex flex-col space-y-1">
+                        <p class="font-semibold">{{include.title}}</p>
+                        <p class="font-normal text-tertiary">{{include.desc}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
