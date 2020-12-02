@@ -12,5 +12,6 @@
  image2="https://live.staticflickr.com/65535/50669625541_59139c5523_k.jpg"
  image3="https://live.staticflickr.com/65535/50668890603_6e70e1718d_k.jpg"
  image4="https://live.staticflickr.com/65535/50669700842_0b9740f5e6_k.jpg"
+ isLastEvent="true"
 
  %}

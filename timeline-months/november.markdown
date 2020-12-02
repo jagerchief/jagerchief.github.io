@@ -35,5 +35,6 @@
  buttonUrl="https://teloputodije.com"
  buttonText="View website"
  text="With two other friends we created an online clothing e-commerce using Woocommerce"
+ isLastEvent="true"
  %}
 

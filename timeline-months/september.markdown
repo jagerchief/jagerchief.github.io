@@ -19,5 +19,6 @@
  tweet="How bad UX in airplanes killed 180 people (in spanish)" 
  date="September 9, 2020" 
  url="https://twitter.com/jagerchief/status/1303630745659990021"
+ isLastEvent="true"
  desc="In this thread I use two example to show how a poor design in the cabin of an airplane can lead to serius accidents" 
  %}

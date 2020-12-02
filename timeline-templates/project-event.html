@@ -5,7 +5,10 @@
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
             </svg>
         </div>
+        {% if include.isLastEvent %}
+        {% else %}
         <div class="flex-1 w-px -mb-12 bg-gray-200 md:-mb-12 dark:bg-gray-800 timeline-stroke"></div>
+        {% endif %}
     </div>
     <div class="flex flex-col flex-1 ml-4 space-y-4">
         <div class="flex flex-col pt-1 contents-center"><span class="font-medium text-primary">Created {{include.name}}</span><span class="text-sm text-tertiary">{{include.date}}</span></div>

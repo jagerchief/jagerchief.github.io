@@ -5,7 +5,10 @@
                 <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
             </svg>
         </div>
+        {% if include.isLastEvent %}
+        {% else %}
         <div class="flex-1 w-px -mb-12 bg-gray-200 md:-mb-12 dark:bg-gray-800 timeline-stroke"></div>
+        {% endif %}
     </div>
     <div class="flex flex-col flex-1 ml-4 space-y-4">
         <div class="flex flex-col pt-1 contents-center"><span class="font-medium text-primary">Published new post</span><span class="text-sm text-tertiary">{{include.date}}</span></div>

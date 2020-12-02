@@ -7,7 +7,10 @@
                 <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
             </svg>
         </div>
+        {% if include.isLastEvent %}
+        {% else %}
         <div class="flex-1 w-px -mb-12 bg-gray-200 md:-mb-12 dark:bg-gray-800 timeline-stroke"></div>
+        {% endif %}
     </div>
     <div class="flex flex-col flex-1 ml-4 space-y-4">
         <div class="flex flex-col pt-1 contents-center"><span class="font-medium text-primary">{{include.title |default: 'Untitled event' }}</span><span class="text-sm text-tertiary">{{include.date}}</span></div>

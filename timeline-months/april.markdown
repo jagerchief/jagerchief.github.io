@@ -11,4 +11,5 @@
  url="http://yahoraqueveo.com"
  buttonText="View more"
  imageUrl="https://pbs.twimg.com/media/EU27YViXkAEUheG?format=jpg&name=large"
+ isLastEvent="true"
  %} 

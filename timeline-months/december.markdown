@@ -8,6 +8,7 @@
  {% include_relative timeline-templates/text-event.html 
  title="Uploaded this website" 
  date="December 2, 2020" 
+ isLastEvent="true"
  text="Finally, after few months, I launched my personal website 🎉"
  %}
 

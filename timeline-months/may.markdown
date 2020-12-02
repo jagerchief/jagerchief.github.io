@@ -10,5 +10,6 @@
  desc="A drinking online game to play with your friends made during the quarentine using Angular 8, Socket.io and Express"
  url="http://ocaborracha.com"
  buttonText="View more"
+ isLastEvent="true"
  imageUrl="/assets/images/oca.png"
  %} 
